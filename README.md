@@ -1,7 +1,7 @@
 ### README for `string_sifter.py`
 
 #### Description
-String Sifter is a Python tool designed for memory analysis, particularly focusing on identifying processes associated with specific memory addresses and strings. It is especially useful in contexts such as debugging, forensic analysis, or detecting memory leaks in systems. The tool reads a list of memory addresses and scans the memory maps of all running processes to find those containing these addresses.
+String Sifter is a Python tool designed for memory analysis, particularly focusing on identifying processes associated with specific memory addresses and strings. It is meant to be used as a post-processing tool for MemProcFs string files. It is especially useful in contexts such as debugging, forensic analysis, or detecting memory leaks in systems. The tool reads a list of memory addresses and scans the memory maps of all running processes to find those containing these addresses.
 
 #### Features
 - Process Identification: Identifies processes that have memory regions containing specified addresses.
@@ -9,6 +9,7 @@ String Sifter is a Python tool designed for memory analysis, particularly focusi
 - Efficient Scanning: Optimized to handle large sets of addresses and numerous processes.
 
 #### Requirements
+- MemProcFs https://github.com/ufrisk/MemProcFS 
 - Operating System: Linux-based system (with memprocfs support).
 - Python Version: (specify Python version here, e.g., Python 3.8 or newer).
 
